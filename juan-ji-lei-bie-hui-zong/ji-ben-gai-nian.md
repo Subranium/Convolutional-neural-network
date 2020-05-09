@@ -32,9 +32,24 @@ kernel泛指一个二维的权重数组，而filter是指一个或多个kernel�
 
 但是对于彩色图来说，他的输入是三通道的，用一个2D的过滤器已经不能解决这个问题了，所以要用一个3D的过滤器，其中堆叠三个卷积核。
 
+## stride
 
+步长，遍历图像时的步幅大小
 
+## padding
 
+填充，如何处理样本的边界。一般有两种方式
+
+* 填充-same
+* 舍弃-valid
+
+## pooling
+
+池化也就是对卷积后的结果做进一步的处理。一般由以下三种方式
+
+* max pooling
+* average pooling
+* stochastic pooling
 
 
 
